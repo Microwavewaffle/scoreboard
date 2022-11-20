@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'timer';
+    src: url(timer.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'timer', sans-serif;
+    background-image: url("images/basketball-background.webp");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+
+}
+
+button {
+    font-family: 'timer', sans-serif;
+    height: 45px;
+    width: 45px;
+    color: #9aabd8;
+    border: 2px solid #9aabd8;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .15s;
+}
+
+button:hover {
+    opacity: .75;
+    color: #f94f6d;
+}
+
+button:active {
+    opacity: .5;
+}
+
+.team-name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: #eeeeee;
+    /* border: 3px solid red; */
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.container {
+    left: 50%;
+    top: 50%;
+    margin-left: -287.5px;
+    margin-top: -192.5px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 575px;
+    height: 385px;
+    background-color: #1b244a;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 7px black;
+    padding: auto;
+}
+
+/* .score-background {
+    width: 155px;
+    height: 120px;
+    background-color: black;
+    border-radius: 5px;
+    border: 3px solid red;
+} */
+
+.score {
+    font-size: 90px;
+    color: #f94f6d;
+    line-height: 141%;
+    /* border: 3px solid red; */
+    width: 155px;
+    height: 120px;
+    background-color: black;
+    border-radius: 7px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px black;
+}
+
+.addPoints {
+    width: 155px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#new-game-btn {
+    width: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: auto -90px;
+}
